@@ -1,0 +1,15 @@
+.nav{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #252427;
+    border-top: 2px solid #3e3e3e;
+    padding: 1% 0 1% 0;
+
+    .navItem{
+        margin: 0 3%;
+        cursor: pointer;
+    }
+}
