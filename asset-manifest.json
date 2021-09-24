@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e55a7076.chunk.css",
-    "main.js": "/static/js/main.0e248e07.chunk.js",
-    "main.js.map": "/static/js/main.0e248e07.chunk.js.map",
+    "main.css": "/static/css/main.e6c13207.chunk.css",
+    "main.js": "/static/js/main.4d40af83.chunk.js",
+    "main.js.map": "/static/js/main.4d40af83.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8a4d7f64.js",
     "runtime-main.js.map": "/static/js/runtime-main.8a4d7f64.js.map",
     "static/js/2.d85f5a73.chunk.js": "/static/js/2.d85f5a73.chunk.js",
@@ -10,9 +10,10 @@
     "static/js/3.3b414c45.chunk.js": "/static/js/3.3b414c45.chunk.js",
     "static/js/3.3b414c45.chunk.js.map": "/static/js/3.3b414c45.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e55a7076.chunk.css.map": "/static/css/main.e55a7076.chunk.css.map",
+    "static/css/main.e6c13207.chunk.css.map": "/static/css/main.e6c13207.chunk.css.map",
     "static/js/2.d85f5a73.chunk.js.LICENSE.txt": "/static/js/2.d85f5a73.chunk.js.LICENSE.txt",
     "static/media/Resume.5d980ecc.pdf": "/static/media/Resume.5d980ecc.pdf",
+    "static/media/Todo.22ebe05f.jpg": "/static/media/Todo.22ebe05f.jpg",
     "static/media/crwn-clothing.f3a9d0b1.jpg": "/static/media/crwn-clothing.f3a9d0b1.jpg",
     "static/media/noshadow.7460b23f.png": "/static/media/noshadow.7460b23f.png",
     "static/media/rotem2.ca787a42.jpg": "/static/media/rotem2.ca787a42.jpg"
@@ -20,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.8a4d7f64.js",
     "static/js/2.d85f5a73.chunk.js",
-    "static/css/main.e55a7076.chunk.css",
-    "static/js/main.0e248e07.chunk.js"
+    "static/css/main.e6c13207.chunk.css",
+    "static/js/main.4d40af83.chunk.js"
   ]
 }
