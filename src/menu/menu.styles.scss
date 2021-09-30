@@ -2,9 +2,13 @@
     z-index: 4;
     position: fixed;
     top: 3%;
-    left: 1%;
+    left: 5%;
     transform: scale(1);
     transition: transform 200ms;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .menu {

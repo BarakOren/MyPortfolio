@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./contact.styles.scss";
 import emailjs from 'emailjs-com';
 import EmailIcon from '@material-ui/icons/Email';
@@ -39,19 +39,22 @@ const Contact = () => {
           e.target.reset();
       }
 
-      if(window.screen.width > 800){
-        var size = 60;
-    } else {
-        var size = 30;
-    }
+      const [width, setWidth] = useState(window.innerWidth)
+      useEffect(() => {
+        function handleResize() {
+          setWidth(window.innerWidth)    
+          }
+          window.addEventListener('resize', handleResize)
+      },[width])
 
     return(
         <div className="contact">
             <h1 className="contactme">Get In Touch</h1>
             <div className="contactContainer">
             <div className="email">
-            <EmailIcon style={{fontSize: size, color: orange[600]}}/>
+            {width > 800 && <EmailIcon style={{fontSize: 60, color: orange[600]}}/>}
             <p style={{margin: "0 0 0 20px"}}>barakoren5@gmail.com</p>
+            <button className="copy" onClick={() => navigator.clipboard.writeText("barakoren5@gmail.com")}>Copy</button>
             </div>
 
             <form className="contact-form" onSubmit={sendEmail}>

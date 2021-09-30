@@ -2,33 +2,25 @@ import React, {useState} from "react";
 import "./menu.styles.scss";
 import MenuIcon from '@material-ui/icons/Menu';
 import { grey } from '@material-ui/core/colors';
-import {useDispatch, useSelector} from "react-redux";
-import {setHeader} from "../redux/header/header.reducer";
-import {toggleMenu} from "../redux/header/menu.reducer";
 import {Link} from "react-router-dom";
+import { useLocation } from "react-router";
 
 const Menu = () => {
-        
-    const menuState = useSelector(state => state.menuReducer.menu);
-    var toggler = menuState ? "" : "hidden";
 
+    const [menuToggle, setMenuToggle] = useState(false);
+    var toggler = menuToggle ? "" : "hidden";
 
-    const dispatch = useDispatch();
-
-    function select(location){
-        dispatch(toggleMenu());
-        setHeader(location);
-    }
+    const location = useLocation().pathname;
 
     return(
         <div>
-            <MenuIcon onClick={() => dispatch(toggleMenu())} style={{ fontSize: 50 }} className="hamburger" style={{ color: grey[100] }} />
+            <MenuIcon onClick={() => setMenuToggle(!menuToggle)}  className="hamburger" style={{ color: grey[100], fontSize: 40 }} />
 
             <div className={`menu ${toggler}`}>
                 <div className="itemContainer">
-                    <Link to="/" onClick={() => select("/")} className="menuItem">About</Link>
-                    <Link to="/projects" onClick={() => select("/projects")} className="menuItem">Projects</Link>
-                    <Link to="/contact" onClick={() => select("/contact")} className="menuItem">Contact</Link>
+                    <Link style={{color: location === "/" ? "white" : "", borderColor: location === "/" ? "white" : ""}} to="/" onClick={() => setMenuToggle(false)} className="menuItem">About</Link>
+                    <Link style={{color: location === "/projects" ? "white" : "", borderColor: location === "/projects" ? "white" : ""}} to="/projects" onClick={() => setMenuToggle(false)} className="menuItem">Projects</Link>
+                    <Link style={{color: location === "/contact" ? "white" : "", borderColor: location === "/contact" ? "white" : ""}} to="/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</Link>
             </div>
 
         </div>

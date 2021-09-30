@@ -1,9 +1,7 @@
 .header{
-    z-index: 1;
+    z-index: 0;
     background-color: #252427;
-    position: fixed;
-    top: 0;
-    padding: 2% 0;
+    height: 6vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
