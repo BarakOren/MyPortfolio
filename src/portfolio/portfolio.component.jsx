@@ -5,12 +5,13 @@ import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/noshadow.png";
 import Todo from "../assets/Todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
+import Trader from "../assets/Trader.jpg";
 
 const DATA = [
     {
         id: 1,
         name: "Rotem Brum",
-        info: "Rotem Brum's Portfolio And Shop Project",
+        info: "Rotem Brum's Portfolio And Shop Project, Built with React, Redux, Sass React-CSSTransitions, EmailJS API and Paypal API",
         image: Rotem2,
         website: "https://barakoren.github.io/rotem-brum/",
         github: "https://github.com/BarakOren/rotem-brum"
@@ -18,7 +19,7 @@ const DATA = [
     {
         id: 2,
         name: "Writer App",
-        info: "A Simple Tool For Artists, Created By Myself.",
+        info: "A Simple Tool For Artists, Created By Myself. Built with React, Redux and Sass",
         image: Writer,
         website: "https://barakoren.github.io/WriterApp/",
         github: "https://github.com/BarakOren/WriterApp"
@@ -26,27 +27,35 @@ const DATA = [
     {
         id: 3,
         name: "CRWN-CLOTHING",
-        info: "Full Clothing Store With Firebase Database",
+        info: "Full Clothing Store! Built with React, Redux, Firebase, Redux-saga and Sass",
         image: CRWN,
         website: "https://barakoren.github.io/CRWN-CLOTHING",
         github: "https://github.com/BarakOren/CRWN-CLOTHING" 
     },
     {
         id: 4,
-        name: "To-Do App",
-        info: "Todo List App with light/dark theme Toggler, Built with Firebase and Styled-Components",
-        image: Todo,
-        website: "https://to-do-857ef.web.app/",
-        github: "https://github.com/BarakOren/Todo" 
-    },
-    {
-        id: 5,
         name: "Crooked Carousel",
         info: "Crooked carousel created with react",
         image: Crooked,
         website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
         github: "https://github.com/BarakOren/Crooked-Carousel" 
     },
+    {
+        id: 5,
+        name: "To-Do App",
+        info: "Todo List App with light/dark theme Toggler, Built with Firebase and Styled-Components",
+        image: Todo,
+        website: "https://to-do-857ef.web.app/",
+        github: "https://github.com/BarakOren/Todo" 
+    }
+    // {
+    //     id: 4,
+    //     name: "Trading site",
+    //     info: "Trading stocks website, the user can buy stocks and watch the profit/loss in real time. built with React, Styled-components and Firebase",
+    //     image: Trader,
+    //     website: "https://barakoren.github.io/Trader/",
+    //     github: "https://github.com/BarakOren/Trader" 
+    // },
 ]
 
 const Portfolio = () => {

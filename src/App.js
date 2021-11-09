@@ -10,19 +10,10 @@ import Menu from './menu/menu.component';
 
 function App() {
 
-  const [width, setWidth] = useState(window.innerWidth)
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth)    
-      }
-      window.addEventListener('resize', handleResize)
-  },[width])
-
   return (
     <div className="App">
-      {
-        width > 800 ? <Header /> : <Menu />
-      }
+        <Header />
+        <Menu />
         <Switch>
           <Route exact component={About} path="/"/>
           <Route exact component={Contact} path="/contact"/>

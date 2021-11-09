@@ -39,20 +39,13 @@ const Contact = () => {
           e.target.reset();
       }
 
-      const [width, setWidth] = useState(window.innerWidth)
-      useEffect(() => {
-        function handleResize() {
-          setWidth(window.innerWidth)    
-          }
-          window.addEventListener('resize', handleResize)
-      },[width])
 
     return(
         <div className="contact">
             <h1 className="contactme">Get In Touch</h1>
             <div className="contactContainer">
             <div className="email">
-            {width > 800 && <EmailIcon style={{fontSize: 60, color: orange[600]}}/>}
+            <EmailIcon style={{fontSize: 60, color: orange[600]}}/>
             <p style={{margin: "0 0 0 20px"}}>barakoren5@gmail.com</p>
             <button className="copy" onClick={() => navigator.clipboard.writeText("barakoren5@gmail.com")}>Copy</button>
             </div>
