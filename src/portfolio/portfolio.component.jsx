@@ -6,26 +6,11 @@ import Writer from "../assets/noshadow.png";
 import Todo from "../assets/Todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 import Trader from "../assets/Trader.jpg";
+import Weather from "../assets/weather.jpg";
 
 const DATA = [
     {
         id: 1,
-        name: "Rotem Brum",
-        info: "Rotem Brum's Portfolio And Shop Project, Built with React, Redux, Sass React-CSSTransitions, EmailJS API and Paypal API",
-        image: Rotem2,
-        website: "https://barakoren.github.io/rotem-brum/",
-        github: "https://github.com/BarakOren/rotem-brum"
-    },
-    {
-        id: 2,
-        name: "Writer App",
-        info: "A Simple Tool For Artists, Created By Myself. Built with React, Redux and Sass",
-        image: Writer,
-        website: "https://barakoren.github.io/WriterApp/",
-        github: "https://github.com/BarakOren/WriterApp"
-    },
-    {
-        id: 3,
         name: "CRWN-CLOTHING",
         info: "Full Clothing Store! Built with React, Redux, Firebase, Redux-saga and Sass",
         image: CRWN,
@@ -33,7 +18,31 @@ const DATA = [
         github: "https://github.com/BarakOren/CRWN-CLOTHING" 
     },
     {
+        id: 2,
+        name: "Weather App",
+        info: "Weather Application, Getting Current Weather, Add cities to favorites list and more, create with react, redux, redux-sagas and more",
+        image: Weather,
+        website: "https://barakoren.github.io/weather/",
+        github: "https://github.com/BarakOren/weather" 
+    },
+    {
+        id: 3,
+        name: "Writer App",
+        info: "A Simple Tool For Artists, Created By Myself. Built with React, Redux and Sass",
+        image: Writer,
+        website: "https://barakoren.github.io/WriterApp/",
+        github: "https://github.com/BarakOren/WriterApp"
+    },
+    {
         id: 4,
+        name: "Rotem Brum",
+        info: "Rotem Brum's Portfolio And Shop Project, Built with React, Redux, Sass React-CSSTransitions, EmailJS API and Paypal API",
+        image: Rotem2,
+        website: "https://barakoren.github.io/rotem-brum/",
+        github: "https://github.com/BarakOren/rotem-brum"
+    },
+    {
+        id: 5,
         name: "Crooked Carousel",
         info: "Crooked carousel created with react",
         image: Crooked,
@@ -41,7 +50,7 @@ const DATA = [
         github: "https://github.com/BarakOren/Crooked-Carousel" 
     },
     {
-        id: 5,
+        id: 6,
         name: "To-Do App",
         info: "Todo List App with light/dark theme Toggler, Built with Firebase and Styled-Components",
         image: Todo,
