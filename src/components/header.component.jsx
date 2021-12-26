@@ -1,5 +1,4 @@
 import React from "react";
-import "./header.styles.scss";
 import {Link} from "react-router-dom";
 import { useLocation } from "react-router";
 import styled from "styled-components";
@@ -16,9 +15,7 @@ const Container = styled.div`
     color: white;
     border-bottom: 2px solid #3e3e3e;
     @media only screen and (max-width: 800px){
-    .header{
         display: none;
-    }
 }
 `
 
@@ -34,7 +31,7 @@ const Links = styled.div`
     justify-content: flex-end;
 `
 
-const Link = styled(Link)`
+const StyledLink = styled(Link)`
     text-decoration: none;
     font-size: 2vw;
     margin: 0% 0 0 5%;
@@ -47,21 +44,19 @@ const Link = styled(Link)`
     }
 `
 
-
-
 const Header = () => {
 
     const location = useLocation().pathname;
 
     return(
-            <div className="header">
-                <p className="name">Barak Oren</p>
-                <div className="items">
-                    <Link style={{color: location === "/" ? "white" : ""}} to="/" className="headerItem">About</Link>
-                    <Link style={{color: location === "/projects" ? "white" : ""}} to="/projects" className="headerItem">Projects</Link>
-                    <Link style={{color: location === "/contact" ? "white" : ""}} to="/contact" className="headerItem">Contact</Link>  
-                </div>
-        </div>
+            <Container>
+                <Name>Barak Oren</Name>
+                <Links >
+                    <StyledLink style={{color: location === "/" ? "white" : ""}} to="/" >About</StyledLink>
+                    <StyledLink style={{color: location === "/projects" ? "white" : ""}} to="/projects" >Projects</StyledLink>
+                    <StyledLink style={{color: location === "/contact" ? "white" : ""}} to="/contact" >Contact</StyledLink>  
+                </Links>
+        </Container>
     )
 }
 
