@@ -2,7 +2,7 @@ import React from "react";
 import Rotem2 from "../assets/rotem2.jpg";
 import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
-import Todo from "../assets/Todo.jpg";
+import Todo from "../assets/todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
@@ -13,12 +13,13 @@ import ProjectCard from "./card.component";
 const DATA = [
     {
         name: "Spot Finder",
-        info: "SpotFinder is an application for those how are into extreme sports",
+        info: "SpotFinder is an application for extreme sports enthusiasts. locating, searching and navigate to spots based on different types of elements and obstacles",
         subInfo: [
-            "-glsdgsdlacela;cecl",
-            "-working with a backend developer as a team",
-            "-working with more complex apis, ",
-            "-glsdgsdlacela;cecl",
+            "-Simple backend with firebase to store locations, users and more.",
+            "-users can add locations to the database.",
+            "-navigate to spots with mapbox api.",
+            "-search and point to spots and locations with mapbox api.",
+            "-built with react and firebase."
         ],
         image: sp,
         website: "https://spotfinder-e8871.web.app/",
@@ -26,11 +27,10 @@ const DATA = [
     },
     {
         name: "CRWN-CLOTHING",
-        info: "Full Clothing Store! Built with React, Redux, Firebase, Redux-saga and Sass",
+        info: "E-Commerce Clothing Store! ",
         subInfo: [
-            "-bladfshlsdflh",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
+            "-Built as part of the course 'Complete React Developer in 2021'",
+            "-Built with React, Redux, Firebase, Redux-saga and Sass"
         ],
         image: CRWN,
         website: "https://barakoren.github.io/CRWN-CLOTHING",
@@ -38,11 +38,12 @@ const DATA = [
     },
     {
         name: "Weather App",
-        info: "Weather Application, Getting Current Weather, Add cities to favorites list and more, create with react, redux, redux-sagas and more",
+        info: "Weather Application.",
         subInfo: [
-            "-bladfshlsdflh",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
+            "-Using api to get the current weather in selected locations/the user's current location.",
+            "-Search bar with autocomplete.",
+            "-User can add and remove locations to favorites.",
+            "-Built with react, redux, redux-sagas and styled-components."
         ],
         image: Weather,
         website: "https://barakoren.github.io/weather/",
@@ -50,11 +51,12 @@ const DATA = [
     },
     {
         name: "Writer App",
-        info: "A Simple Tool For Artists, Created By Myself. Built with React, Redux and Sass",
+        info: "A tool for graffiti artits that simulates combinations of specific color shades that art companeis produce.",
         subInfo: [
             "-Working together with react-native developer",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
+            "-App is ready to download from google play or can be used in a web version.",
+            "-Designed and produced by myself.",
+            "-Built with react, redux and sass."
         ],
         image: Writer,
         website: "https://barakoren.github.io/WriterApp/",
@@ -62,11 +64,10 @@ const DATA = [
     },
     {
         name: "Rotem Brum",
-        info: "Rotem Brum's Portfolio And Shop Project, Built with React, Redux, Sass React-CSSTransitions, EmailJS API and Paypal API",
+        info: "Rotem Brum's Portfolio And Shop Project, ",
         subInfo: [
-            "-bladfshlsdflh",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
+            "-Working with calligraphy artist/designer and use his work in the website.",
+            "-Built with React, Redux, Sass, React-CSSTransitions and Paypal API",
         ],
         image: Rotem2,
         website: "https://barakoren.github.io/rotem-brum/",

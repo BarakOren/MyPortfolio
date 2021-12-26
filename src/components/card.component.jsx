@@ -148,7 +148,7 @@ const Card = styled.div`
             font-size: 3vw;
         }
         @media only screen and (max-width: 500px){
-            font-size: 5vw;
+            font-size: 4vw;
         }
       }
 
@@ -165,7 +165,7 @@ const Card = styled.div`
             font-size: 2.5vw;
         }
         @media only screen and (max-width: 500px){
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
       }
 
