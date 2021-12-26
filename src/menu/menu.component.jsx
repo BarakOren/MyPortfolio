@@ -4,6 +4,15 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { grey } from '@material-ui/core/colors';
 import {Link} from "react-router-dom";
 import { useLocation } from "react-router";
+import styled from "styled-components";
+
+const Container = styled.div`
+
+`
+
+const Hamburger = styled(MenuIcon)`
+
+`
 
 const Menu = () => {
 

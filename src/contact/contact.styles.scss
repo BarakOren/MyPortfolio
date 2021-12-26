@@ -65,7 +65,7 @@
                 font-size: 1.5vw;
                 margin: 0 0 20px 0 !important;
                 color: #8e8d8f;
-                background-color: #252427;
+                background-color: transparent;
                 border: solid 1px #8e8d8f;
                 width: 50%;
                 transition: 300ms;
@@ -87,7 +87,7 @@
                     font-size: 1.5vw;
                     color: #8e8d8f;
                     border: solid 1px #8e8d8f;
-                    background-color: #252427;
+                    background-color: transparent;
                     transition: 300ms;
 
                     &:focus {
