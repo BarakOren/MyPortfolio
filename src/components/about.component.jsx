@@ -34,12 +34,16 @@ const Name = styled.p`
     width: 100%;
     color: white;
     font-size: 10vw;
-    margin: 0 30% 0 0;
+    margin: 0;
     @media only screen and (max-width: 1100px){
+        text-align: center;
         font-size: 13vw;
         margin: 0 0 0 0;
     }
     @media only screen and (max-width: 768px){
+        font-size: 13vw;
+    }
+    @media only screen and (max-width: 500px){
         font-size: 15vw;
     }
 `
@@ -53,6 +57,9 @@ const FrontEnd = styled.p`
         margin: 0 0 0 0;  
     }
     @media only screen and (max-width: 768px){
+        font-size: 5vw;
+    }
+    @media only screen and (max-width: 500px){
         font-size: 7vw;
     }
 `
@@ -65,6 +72,9 @@ const Description = styled.p`
     }
     @media only screen and (max-width: 768px){
         width: 80%;
+        font-size: 3vw;
+    }
+    @media only screen and (max-width: 500px){
         font-size: 5vw;
     }
 `
@@ -83,11 +93,12 @@ const Icons = styled.div`
     display: flex;
     justify-content: space-evenly;
     }
+
 `
 
 const Button = styled.a`
     text-decoration: none;
-    padding: 1% 3%;
+    padding: 0.7% 3%;
     background-color: #423f47;
     color: white;
     text-align: center;
@@ -96,15 +107,21 @@ const Button = styled.a`
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5s ease 0s;
-    font-size: 1vw;
+    font-size: 1.3vw;
     &:hover {
         box-shadow: rgb(255, 136, 0) 0px 0px 20px;
     }
     @media only screen and (max-width: 1100px){
         font-size: 2vw; 
+        padding: 1vw 4vw;
     }
     @media only screen and (max-width: 768px){
+        font-size: 4vw;
+        padding: 1vw 5vw;
+    }
+    @media only screen and (max-width: 500px){
         font-size: 5vw;
+        padding: 2vw 7vw;
     }
 `
 

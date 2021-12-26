@@ -1,5 +1,4 @@
 import React from "react";
-import "./nav.styles.scss";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import grey from '@material-ui/core/colors/grey';

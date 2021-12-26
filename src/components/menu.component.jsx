@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import "./menu.styles.scss";
 import MenuIcon from '@material-ui/icons/Menu';
 import { grey } from '@material-ui/core/colors';
 import {Link} from "react-router-dom";
@@ -31,7 +30,7 @@ const Container = styled.div`
         position: fixed;
         top: 0;
         transition: right 0.8s ease;
-        background-color: #252427;
+        background-image: linear-gradient(to right, #252427, #202022, #1c1c1d, #181718, #131313);
         }
 `
 

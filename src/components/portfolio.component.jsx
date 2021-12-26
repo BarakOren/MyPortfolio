@@ -1,13 +1,14 @@
 import React from "react";
-import "./portfolio.styles.scss";
 import Rotem2 from "../assets/rotem2.jpg";
 import CRWN from "../assets/crwn-clothing.jpg";
-import Writer from "../assets/noshadow.png";
+import Writer from "../assets/writer.jpg";
 import Todo from "../assets/Todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
-import Trader from "../assets/Trader.jpg";
+// import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
 import sp from "../assets/sp.jpg";
+import styled from "styled-components";
+import ProjectCard from "./card.component";
 
 const DATA = [
     {
@@ -105,36 +106,50 @@ const DATA = [
     // },
 ]
 
+// @media only screen and (max-width: 1200px){
+//     @media only screen and (max-width: 1190px){
+//         @media only screen and (max-width: 800px){
+//     @media only screen and (max-width: 500px){
+
+const Container = styled.div`
+    width: 100%;
+    height: auto;
+    margin: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 800px){margin-bottom: 2vh;}
+`
+
+const Title = styled.h1`
+    margin: 0 0 2vh 0;
+    @media only screen and (max-width: 800px){font-size: 10vw;}
+`
+
+const CardsContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+`
+
+
 const Portfolio = () => {
     return(
-        <div className="portfolio">
-            <h1 className="projectsTitle">Projects</h1>
-            <div className="cardsContainer">
+        <Container>
+            <Title>Projects</Title>
+            <CardsContainer>
                 {DATA.map(({index, name, info, subInfo, image, website, github}) => {
                     return(
-                        <div className="card" key={index}>
-                        <div className="background-image" style={{
-                        backgroundImage: `url(${image})`}} 
-                        />
-                <div className="content">
-                    <h1 className="name">{name}</h1>
-                    <div key={index} className="infoContainer">
-                        <p className="info">{info}</p>
-                        {subInfo.map((sub, index) => {
-                            return <p key={index} className="row">{sub}</p>
-                        })}
-                    </div>
-                    <div className="ButtonsContainer">
-                        <a className="link" href={website} target="_blank" rel="noopener noreferrer">website</a>
-                        <a className="link" href={github} target="_blank" rel="noopener noreferrer">github</a>                
-                    </div>
-                </div>
-            </div>
-            )
+                        <ProjectCard key={index} name={name} info={info} subInfo={subInfo} image={image} website={website} github={github} />
+                    )
             })
             }
-            </div>
-        </div>
+            </CardsContainer>
+        </Container>
     )
 }
 
