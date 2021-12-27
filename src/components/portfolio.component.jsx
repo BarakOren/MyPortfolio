@@ -2,7 +2,7 @@ import React from "react";
 import Rotem2 from "../assets/rotem2.jpg";
 import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
-import Todo from "../assets/todo.jpg";
+import Todo from "../assets/Todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
@@ -75,24 +75,14 @@ const DATA = [
     },
     {
         name: "Crooked Carousel",
-        info: "Crooked carousel created with react",
-        subInfo: [
-            "-bladfshlsdflh",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
-        ],
+        info: "Crooked carousel created with react, users can put any sizes and use it in their own websites.",
         image: Crooked,
         website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
         github: "https://github.com/BarakOren/Crooked-Carousel" 
     },
     {
         name: "To-Do App",
-        info: "Todo List App with light/dark theme Toggler, Built with Firebase and Styled-Components",
-        subInfo: [
-            "-bladfshlsdflh",
-            "-sdfhdojsahjsdjohojasdhosaohjas",
-            "-dsghjosdahojdsojahsjadohjoshojshos"
-        ],
+        info: "Todo List App with light/dark theme Toggler, Built with react Firebase and Styled-Components",
         image: Todo,
         website: "https://to-do-857ef.web.app/",
         github: "https://github.com/BarakOren/Todo" 

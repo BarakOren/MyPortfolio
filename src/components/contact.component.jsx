@@ -9,6 +9,7 @@ width: 100%;
 height: 80vh;
 margin: 3vh 0;
 cursor: default;
+text-align: center;
 
 @media only screen and (max-width: 800px){
 

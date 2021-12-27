@@ -227,7 +227,7 @@ const ProjectCard = (props) => {
             <Card className="name">{name}</Card>
             <Card className="infoContainer">
             <Card className="info">{info}</Card>
-            {subInfo.map((sub, index) => {
+            {subInfo && subInfo.map((sub, index) => {
                 return <Card key={index} className="subInfo">{sub}</Card>
             })}
             </Card>
