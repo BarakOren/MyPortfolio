@@ -23,7 +23,7 @@ const DATA = [
         ],
         image: sp,
         website: "https://spotfinder-e8871.web.app/",
-        github: "https://github.com/ophirgal/myskatespots" 
+        github: "https://github.com/BarakOren/spot-finder" 
     },
     {
         name: "CRWN-CLOTHING",
@@ -96,11 +96,6 @@ const DATA = [
     //     github: "https://github.com/BarakOren/Trader" 
     // },
 ]
-
-// @media only screen and (max-width: 1200px){
-//     @media only screen and (max-width: 1190px){
-//         @media only screen and (max-width: 800px){
-//     @media only screen and (max-width: 500px){
 
 const Container = styled.div`
     width: 100%;
