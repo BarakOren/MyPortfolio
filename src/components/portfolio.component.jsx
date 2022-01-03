@@ -2,7 +2,7 @@ import React from "react";
 import Rotem2 from "../assets/rotem2.jpg";
 import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
-import Todo from "../assets/Todo.jpg";
+import Todo from "../assets/todo.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
@@ -10,40 +10,26 @@ import sp from "../assets/sp.jpg";
 import styled from "styled-components";
 import ProjectCard from "./card.component";
 
-const DATA = [
+export const DATA = [
     {
         name: "Spot Finder",
         info: "SpotFinder is an application for extreme sports enthusiasts. locating, searching and navigate to spots based on different types of elements and obstacles",
         subInfo: [
-            "-Simple backend with firebase to store locations, users and more.",
-            "-users can add locations to the database.",
-            "-navigate to spots with mapbox api.",
-            "-search and point to spots and locations with mapbox api.",
-            "-built with react and firebase."
+            "-Interactive map containing locations uploaded by users. include features like adding new locations, navigation, searchbar and more.",
+            "-Using Firebase to store, add or change data about locations and users.",
+            "-built with React and Firebase."
         ],
         image: sp,
         website: "https://spotfinder-e8871.web.app/",
         github: "https://github.com/BarakOren/spot-finder" 
     },
     {
-        name: "CRWN-CLOTHING",
-        info: "E-Commerce Clothing Store! ",
-        subInfo: [
-            "-Built as part of the course 'Complete React Developer in 2021'",
-            "-Built with React, Redux, Firebase, Redux-saga and Sass"
-        ],
-        image: CRWN,
-        website: "https://barakoren.github.io/CRWN-CLOTHING",
-        github: "https://github.com/BarakOren/CRWN-CLOTHING" 
-    },
-    {
         name: "Weather App",
         info: "Weather Application.",
         subInfo: [
-            "-Using api to get the current weather in selected locations/the user's current location.",
-            "-Search bar with autocomplete.",
-            "-User can add and remove locations to favorites.",
-            "-Built with react, redux, redux-sagas and styled-components."
+            "-Using Redux-Sagas to work with Api and get weather information.",
+            "-Users can add and remove locations to favorites. get weather by their location, or use search autocomplete to get the weather from any location.",
+            "-Built with React, Redux, Redux-Sagas and Styled-Components."
         ],
         image: Weather,
         website: "https://barakoren.github.io/weather/",
@@ -51,16 +37,27 @@ const DATA = [
     },
     {
         name: "Writer App",
-        info: "A tool for graffiti artits that simulates combinations of specific color shades that art companeis produce.",
+        info: "A tool for graffiti artists that simulates combinations of specific color shades that art companeis produce.",
         subInfo: [
-            "-Working together with react-native developer",
-            "-App is ready to download from google play or can be used in a web version.",
-            "-Designed and produced by myself.",
-            "-Built with react, redux and sass."
+            "-Design and develop a solution for a real-life problem.",
+            "-Programmed the website and app with react and redux.",
+            "-Designed the app and website with Adobe XD.",
+            "-Artwork created by me using Adobe Illustrator."
         ],
         image: Writer,
         website: "https://barakoren.github.io/WriterApp/",
         github: "https://github.com/BarakOren/WriterApp"
+    },
+    {
+        name: "CRWN-CLOTHING",
+        info: "E-Commerce Clothing Store! ",
+        subInfo: [
+            "-Built as part of the course 'Complete React Developer in 2021'",
+            "-Built with React, Redux, Firebase, Redux-sagas and Sass"
+        ],
+        image: CRWN,
+        website: "https://barakoren.github.io/CRWN-CLOTHING",
+        github: "https://github.com/BarakOren/CRWN-CLOTHING" 
     },
     {
         name: "Rotem Brum",
