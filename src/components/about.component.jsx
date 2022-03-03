@@ -66,6 +66,7 @@ const FrontEnd = styled.p`
 
 const Description = styled.p`
     width: 70%;
+    margin: 5px;
     @media only screen and (max-width: 1100px){
         width: 80%;
         font-size: 2.5vw;
@@ -98,7 +99,7 @@ const Icons = styled.div`
 
 const Button = styled.a`
     text-decoration: none;
-    padding: 0.7% 3%;
+    padding: 0.5% 5%;
     background-color: #423f47;
     color: white;
     text-align: center;
@@ -109,7 +110,7 @@ const Button = styled.a`
     transition: all 0.5s ease 0s;
     font-size: 1.3vw;
     &:hover {
-        box-shadow: rgb(255, 136, 0) 0px 0px 20px;
+        box-shadow: rgba(255, 136, 0, 0.699) 0px 0px 20px;
     }
     @media only screen and (max-width: 1100px){
         font-size: 2vw; 
@@ -168,7 +169,7 @@ const About = () => {
             <Name>Barak Oren</Name>
             <FrontEnd>Front-End Developer</FrontEnd>
         </TitleContainer>
-            <Description>Im a Self-Taught front-end developer with a big passion for the combination of design and coding. searching for my next job as a front-end developer.</Description>
+            <Description>Adaptable Front-End Developer with 2 years of developing experience. Fast Learner who specializes in React, Redux and JavaScript. Writing high level of clean code and passion for user experience and clean UI designs.</Description>
             {/* <div className="icons">
             <i id="icon" className="devicon-html5-plain-wordmark colored"></i>
             <i id="icon" className="devicon-css3-plain-wordmark colored"></i>
@@ -183,7 +184,7 @@ const About = () => {
             <SassIcon />
             </Icons>
       
-        <Button href={pdf} target="blank" >Resume</Button>
+        <Button href={pdf} target="blank" >Get My CV</Button>
 
     </Container>
     )

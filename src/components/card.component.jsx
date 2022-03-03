@@ -21,8 +21,8 @@ const Card = styled.div`
         box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.575);
     }
     &:hover .backgroundImage {
-          opacity: 0.5;
-          transition: 300ms;    
+        filter: blur(1px);
+          transition: 200ms;    
         }
     &:hover .content {
         opacity: 1;
@@ -90,7 +90,7 @@ const Card = styled.div`
         transition: all 300ms;
         &:hover{
           transition: all 300ms;
-          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.295);
+          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.1);
         }
         @media only screen and (max-width: 1200px){
             font-size: 4vw;
@@ -118,7 +118,7 @@ const Card = styled.div`
         transition: all 300ms;
         &:hover{
           transition: all 300ms;
-          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.295);
+          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.1);
         }
         @media only screen and (max-width: 1200px){
             width: 60vw;
@@ -192,7 +192,7 @@ const A = styled.a`
     &:hover{
     transition: all 300ms;
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.644);
+    box-shadow: 0px 0px 15px rgba(255, 136, 0, 0.50);
     cursor: pointer;
     color: white;
     }

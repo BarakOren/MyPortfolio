@@ -77,13 +77,13 @@ export const DATA = [
         website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
         github: "https://github.com/BarakOren/Crooked-Carousel" 
     },
-    {
-        name: "To-Do App",
-        info: "Todo List App with light/dark theme Toggler, Built with react Firebase and Styled-Components",
-        image: Todo,
-        website: "https://to-do-857ef.web.app/",
-        github: "https://github.com/BarakOren/Todo" 
-    }
+    // {
+    //     name: "To-Do App",
+    //     info: "Todo List App with light/dark theme Toggler, Built with react Firebase and Styled-Components",
+    //     image: Todo,
+    //     website: "https://to-do-857ef.web.app/",
+    //     github: "https://github.com/BarakOren/Todo" 
+    // }
     // {
     //     id: 4,
     //     name: "Trading site",
@@ -125,7 +125,8 @@ const Portfolio = () => {
         <Container>
             <Title>Projects</Title>
             <CardsContainer>
-                {DATA.map(({index, name, info, subInfo, image, website, github}) => {
+                {DATA.map((project) => {
+                    const {index, name, info, subInfo, image, website, github} = project;
                     return(
                         <ProjectCard key={index} name={name} info={info} subInfo={subInfo} image={image} website={website} github={github} />
                     )
