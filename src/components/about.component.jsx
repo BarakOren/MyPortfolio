@@ -8,6 +8,7 @@ import {ReactLogo} from "@styled-icons/boxicons-logos/ReactLogo";
 import {Redux} from "@styled-icons/boxicons-logos/Redux";
 import {Styledcomponents} from "@styled-icons/simple-icons/Styledcomponents";
 import {Sass} from "@styled-icons/fa-brands/Sass"
+import {Webflow} from "@styled-icons/simple-icons/Webflow"
 
 const Container = styled.div`
     width: 100%;
@@ -161,6 +162,11 @@ const SassIcon = styled(Sass)`
     margin: 0 10px;
 `
 
+const WebFlow = styled(Webflow)`
+    color: #4353ff;
+    margin: 0 10px;
+`
+
 const About = () => {
     
     return(
@@ -181,7 +187,7 @@ const About = () => {
             <Icons>
             <HtmlIcon /><CssIcon /><JavascriptIcon />
             <ReactIcon /><ReduxIcon /><StyledIcon />
-            <SassIcon />
+            <SassIcon /> <WebFlow />
             </Icons>
       
         <Button href={pdf} target="blank" >Get My CV</Button>

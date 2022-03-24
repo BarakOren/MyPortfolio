@@ -233,7 +233,7 @@ const ProjectCard = (props) => {
             </Card>
             <Card className="ButtonsContainer">
                 <A className="link" href={website} target="_blank" rel="noopener noreferrer">Website</A>
-                <A className="link" href={github} target="_blank" rel="noopener noreferrer">Github</A>                
+                {github && <A className="link" href={github} target="_blank" rel="noopener noreferrer">Github</A>}
             </Card>
         </Card>
     </Card>

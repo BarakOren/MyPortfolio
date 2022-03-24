@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Container = styled.div`
     z-index: 0;
     background-color: transparent;
-    height: 6vw;
+    height: 4vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ const Links = styled.div`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.7vw;
     margin: 0% 0 0 5%;
     transition: color .5s;
     color: #8e8d8f;

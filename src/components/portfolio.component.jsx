@@ -3,12 +3,14 @@ import Rotem2 from "../assets/rotem2.jpg";
 import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
 import Todo from "../assets/todo.jpg";
+import webflow from "../assets/webflow.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
 import sp from "../assets/sp.jpg";
 import styled from "styled-components";
 import ProjectCard from "./card.component";
+
 
 export const DATA = [
     {
@@ -22,6 +24,16 @@ export const DATA = [
         image: sp,
         website: "https://spotfinder-e8871.web.app/",
         github: "https://github.com/BarakOren/spot-finder" 
+    },
+    {
+        name: "Webflow Portfolio",
+        info: "My portfolio website using Webflow",
+        subInfo: [
+            "",
+        ],
+        image: webflow,
+        website: "https://barak-oren.webflow.io/",
+        github: null 
     },
     {
         name: "Weather App",
