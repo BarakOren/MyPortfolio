@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "./Resume.pdf";
+// import pdf from "./Resume.pdf";
 import styled from "styled-components";
 import {Html5} from '@styled-icons/boxicons-logos/Html5';
 import {Css3} from '@styled-icons/boxicons-logos/Css3';
@@ -9,6 +9,8 @@ import {Redux} from "@styled-icons/boxicons-logos/Redux";
 import {Styledcomponents} from "@styled-icons/simple-icons/Styledcomponents";
 import {Sass} from "@styled-icons/fa-brands/Sass"
 import {Webflow} from "@styled-icons/simple-icons/Webflow"
+import {Link} from "react-router-dom";
+
 
 const Container = styled.div`
     width: 100%;
@@ -35,14 +37,15 @@ const Name = styled.p`
     width: 100%;
     color: white;
     font-size: 10vw;
-    margin: 0;
+    margin: 0 25vw 0 0;
+    text-align: center;
     @media only screen and (max-width: 1100px){
-        text-align: center;
         font-size: 13vw;
         margin: 0 0 0 0;
     }
     @media only screen and (max-width: 768px){
         font-size: 13vw;
+        margin: 50px 0 0 0;
     }
     @media only screen and (max-width: 500px){
         font-size: 15vw;
@@ -82,7 +85,7 @@ const Description = styled.p`
 `
 
 const Icons = styled.div`
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     @media only screen and (max-width: 1100px){
@@ -98,10 +101,39 @@ const Icons = styled.div`
 
 `
 
-const Button = styled.a`
+// const Button = styled.a`
+//     text-decoration: none;
+//     padding: 0.5% 5%;
+//     background-color: #423f47;
+//     color: white;
+//     text-align: center;
+//     border: 2px solid rgb(255, 136, 0);
+//     box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+//     border-radius: 50px;
+//     cursor: pointer;
+//     transition: all 0.5s ease 0s;
+//     font-size: 1.3vw;
+//     &:hover {
+//         box-shadow: rgba(255, 136, 0, 0.699) 0px 0px 20px;
+//     }
+//     @media only screen and (max-width: 1100px){
+//         font-size: 2vw; 
+//         padding: 1vw 4vw;
+//     }
+//     @media only screen and (max-width: 768px){
+//         font-size: 4vw;
+//         padding: 1vw 5vw;
+//     }
+//     @media only screen and (max-width: 500px){
+//         font-size: 5vw;
+//         padding: 2vw 7vw;
+//     }
+// `
+
+const Button = styled(Link)`
     text-decoration: none;
-    padding: 0.5% 5%;
-    background-color: #423f47;
+    padding: 0.5% 3%;
+    background-color: #363232;
     color: white;
     text-align: center;
     border: 2px solid rgb(255, 136, 0);
@@ -190,8 +222,8 @@ const About = () => {
             <SassIcon /> <WebFlow />
             </Icons>
       
-        <Button href={pdf} target="blank" >Get My CV</Button>
-
+        {/* <Button href={pdf} target="blank" >Get My CV</Button> */}
+            <Button to="/projects">Check Out My Work</Button>
     </Container>
     )
 }

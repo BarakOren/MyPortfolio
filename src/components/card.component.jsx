@@ -22,7 +22,8 @@ const Card = styled.div`
     }
     &:hover .backgroundImage {
         filter: blur(1px);
-          transition: 200ms;    
+        opacity: 0.7;
+        transition: 200ms;    
         }
     &:hover .content {
         opacity: 1;
