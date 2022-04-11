@@ -14,11 +14,10 @@ import {Link} from "react-router-dom";
 
 const Container = styled.div`
     width: 100%;
-    height: 80vh;
+    height: auto;
     margin: 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     cursor: default;
     @media only screen and (max-width: 1100px){
@@ -30,6 +29,7 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 3vh 0 3vh 0;
 `
 
 const Name = styled.p`
@@ -54,6 +54,7 @@ const Name = styled.p`
 
 const FrontEnd = styled.p`
     font-weight: 300;
+    color: white;
     font-size: 3vw;
     margin: 0 0 0 40%;
     @media only screen and (max-width: 1100px){
@@ -70,7 +71,7 @@ const FrontEnd = styled.p`
 
 const Description = styled.p`
     width: 70%;
-    margin: 5px;
+    margin: 5vh 0 0 0;
     @media only screen and (max-width: 1100px){
         width: 80%;
         font-size: 2.5vw;
@@ -88,6 +89,13 @@ const Icons = styled.div`
     width: 60%;
     display: flex;
     justify-content: space-evenly;
+    background: rgba( 255, 255, 255, 0.08 );
+    box-shadow: 1px 1px 30px rgba( 255,255,255, 0.08 );
+    backdrop-filter: blur( 25px );
+    -webkit-backdrop-filter: blur( 25px );
+    border-radius: 30px;
+    padding: 1vw 3vw;
+    margin: 3vh 0;
     @media only screen and (max-width: 1100px){
     width:80%;
     display: flex;
@@ -133,17 +141,18 @@ const Icons = styled.div`
 const Button = styled(Link)`
     text-decoration: none;
     padding: 0.5% 3%;
-    background-color: #363232;
-    color: white;
+    margin: 3vh 0;
+    background-color: #302635;
+    color: #ffffff;
     text-align: center;
-    border: 2px solid rgb(255, 136, 0);
+    border: 2px solid hsla(339,60%,40%);
     box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5s ease 0s;
     font-size: 1.3vw;
     &:hover {
-        box-shadow: rgba(255, 136, 0, 0.699) 0px 0px 20px;
+        box-shadow: hsla(339,60%,40%) 0px 0px 20px;
     }
     @media only screen and (max-width: 1100px){
         font-size: 2vw; 
@@ -201,13 +210,15 @@ const WebFlow = styled(Webflow)`
 
 const About = () => {
     
+
+
     return(
     <Container>
         <TitleContainer>
             <Name>Barak Oren</Name>
             <FrontEnd>Front-End Developer</FrontEnd>
-        </TitleContainer>
             <Description>Adaptable Front-End Developer with 2 years of developing experience. Fast Learner who specializes in React, Redux and JavaScript. Writing high level of clean code and passion for user experience and clean UI designs.</Description>
+        </TitleContainer>
             {/* <div className="icons">
             <i id="icon" className="devicon-html5-plain-wordmark colored"></i>
             <i id="icon" className="devicon-css3-plain-wordmark colored"></i>
@@ -223,7 +234,7 @@ const About = () => {
             </Icons>
       
         {/* <Button href={pdf} target="blank" >Get My CV</Button> */}
-            <Button to="/projects">Check Out My Work</Button>
+            <Button onClick={() => window.scrollTo({ top: 0 })} to="/projects">Check Out My Work</Button>
     </Container>
     )
 }

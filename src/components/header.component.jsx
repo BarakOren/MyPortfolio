@@ -12,8 +12,6 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    border-bottom: 2px solid #3e3e3e;
     @media only screen and (max-width: 800px){
         display: none;
 }
@@ -35,11 +33,13 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     font-size: 1.7vw;
     margin: 0% 0 0 5%;
-    transition: color .5s;
-    color: #8e8d8f;
+    transition: all .5s;
+    color: rgb(212, 212, 212);
+
 
     &:hover{
         color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 10px rgb(255,255,255, 0.8);
         cursor: pointer;
     }
 `
@@ -52,9 +52,9 @@ const Header = () => {
             <Container>
                 <Name>Barak Oren</Name>
                 <Links >
-                    <StyledLink style={{color: location === "/" ? "white" : ""}} to="/" >About</StyledLink>
-                    <StyledLink style={{color: location === "/projects" ? "white" : ""}} to="/projects" >Projects</StyledLink>
-                    <StyledLink style={{color: location === "/contact" ? "white" : ""}} to="/contact" >Contact</StyledLink>  
+                    <StyledLink style={{color: location === "/" ? "white" : "", textShadow: location === "/" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/" >About</StyledLink>
+                    <StyledLink style={{color: location === "/projects" ? "white" : "", textShadow: location === "/projects" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/projects" >Projects</StyledLink>
+                    <StyledLink style={{color: location === "/contact" ? "white" : "", textShadow: location === "/contact" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/contact" >Contact</StyledLink>  
                 </Links>
         </Container>
     )

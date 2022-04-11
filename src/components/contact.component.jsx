@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import emailjs from 'emailjs-com';
 import EmailIcon from '@material-ui/icons/Email';
-import orange from '@material-ui/core/colors/orange';
+import purple from '@material-ui/core/colors/purple';
 import styled, {keyframes} from "styled-components"
 
 const Container = styled.div`
@@ -71,10 +71,10 @@ const EmailAddress = styled.p`
 const Button = styled.button`
     padding: 0.5vw 1vw;
     text-align: center;
-    background-color: #423f47;
     color: white;
     text-align: center;
-    border: 2px solid rgb(255, 136, 0);
+    border: 2px solid hsla(339,60%,40%);
+    background-color: #302635;
     box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
     border-radius: 50px;
     cursor: pointer;
@@ -82,7 +82,7 @@ const Button = styled.button`
     font-size: 1vw;
     margin-left: 1vw;
     &:hover {
-        box-shadow: rgb(255, 136, 0) 0px 0px 20px;
+        box-shadow: hsla(339,60%,40%) 0px 0px 20px;
     }
     &:active {
         transform: scale(0.9);
@@ -116,7 +116,8 @@ const Input = styled.input`
     &:focus {
         transition: 300ms;
         outline: none !important;
-        border: 1px solid rgb(255, 136, 0);
+        border: 1px solid hsla(339,60%,40%);
+
     }
     @media only screen and (max-width: 800px){
     font-size: 5vw;
@@ -137,7 +138,8 @@ const TextArea = styled.textarea`
     &:focus {
         transition: 300ms;
         outline: none !important;
-        border: 1px solid rgb(255, 136, 0);
+        border: 1px solid hsla(339,60%,40%);
+
     }     
     @media only screen and (max-width: 800px){
     font-size: 4vw;
@@ -147,18 +149,21 @@ const TextArea = styled.textarea`
 const Submit = styled.button`
     width: 10vw;
     height: 3vw;
-    background-color: #423f47;
+    background-color: #302635;
+
     color: white;
     text-align: center;
-    border: 2px solid rgb(255, 136, 0);
-    box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
+    border: 2px solid hsla(339,60%,40%);
+
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5s ease 0s;
     font-size: 1.5vw;
+    box-shadow: rgb(0 0 0 / 60%) 3px 3px 2px;
     font-family: 'Montserrat', sans-serif;
     &:hover {
-        box-shadow: rgb(255, 136, 0) 0px 0px 20px;
+        box-shadow: hsla(339,60%,40%) 0px 0px 20px;
+        
     }
     &:active {
         transform: scale(0.9);
@@ -227,7 +232,7 @@ const Contact = () => {
             <Title>Get In Touch</Title>
         <ContactContainer>
             <Email>
-                <EmailIcon style={{fontSize: 60, color: orange[600]}}/>
+                <EmailIcon style={{fontSize: 60, color: purple[600]}}/>
                 <EmailAddress>barakoren5@gmail.com</EmailAddress>
                 <Button onClick={() => navigator.clipboard.writeText("barakoren5@gmail.com")}>Copy</Button>
             </Email>

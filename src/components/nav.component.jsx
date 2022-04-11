@@ -14,7 +14,6 @@ justify-content: center;
 align-items: center;
 // background-color: #252427;
 background-color: transparent;
-border-top: 2px solid #3e3e3e;
 `
 
 const A = styled.a`

@@ -17,12 +17,12 @@ const Card = styled.div`
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.575);
     transition: 300ms all;
     &:hover {
-        background-color: #804f1016;
-        box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.575);
+        /* background-color: #804f1016; */
+
     }
     &:hover .backgroundImage {
-        filter: blur(1px);
-        opacity: 0.7;
+        filter: blur(1px) saturate(60%);
+
         transition: 200ms;    
         }
     &:hover .content {
@@ -83,16 +83,13 @@ const Card = styled.div`
     &.name{
         border-radius: 25px;
         padding: 1vw 3vw;
-        background-color: #3e3e3e;
+        /* background-color: #3e3e3e; */
         font-size: 2.5vw;
+        background-color: #191c38dc;
         color: white;
         margin: 0;
-        box-shadow: 0px 0px 10px rgb(0,0,0);
-        transition: all 300ms;
-        &:hover{
-          transition: all 300ms;
-          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.1);
-        }
+        box-shadow: 3px 3px 10px #ffffff18;
+
         @media only screen and (max-width: 1200px){
             font-size: 4vw;
         }
@@ -111,16 +108,16 @@ const Card = styled.div`
         padding: 1.5vw 2.5vw;
         border-radius: 25px;
         width: 40vw;
-        background-color: #3e3e3e;
+        /* background-color: #3e3e3e; */
+        background-color: #191c38ca;
+        color: #dadada;
+  
         font-size: 1.3vw;
         margin: 0;
-        box-shadow: 0px 0px 10px rgb(0,0,0);
+        box-shadow: 3px 3px 10px #ffffff18;
         text-align: left;
-        transition: all 300ms;
-        &:hover{
-          transition: all 300ms;
-          box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.1);
-        }
+
+
         @media only screen and (max-width: 1200px){
             width: 60vw;
         }
@@ -182,18 +179,18 @@ const A = styled.a`
     margin: 0;
     padding: 0.5vw 5vw;
     border-radius: 25px;
-    background-color: #3e3e3e;
+    background-color: #191c38;
     font-size: 1.5vw;
     color: #b8b8b8;
     text-decoration: none;
     transform: scale(1);
     transition: all 300ms;
-    box-shadow: 0px 0px 10px rgb(0,0,0);
+    box-shadow: 3px 3px 10px #ffffff18;
     border: 1px solid rgb(255, 255, 255, 0.3);
     &:hover{
     transition: all 300ms;
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(255, 136, 0, 0.50);
+    box-shadow: 0px 0px 15px #ffffff7f;
     cursor: pointer;
     color: white;
     }
