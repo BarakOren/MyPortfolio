@@ -9,7 +9,11 @@ import {Redux} from "@styled-icons/boxicons-logos/Redux";
 import {Styledcomponents} from "@styled-icons/simple-icons/Styledcomponents";
 import {Sass} from "@styled-icons/fa-brands/Sass"
 import {Webflow} from "@styled-icons/simple-icons/Webflow"
+import {Nuxtdotjs} from "@styled-icons/simple-icons/Nuxtdotjs"
+import {Vuejs} from "@styled-icons/boxicons-logos/Vuejs"
+
 import {Link} from "react-router-dom";
+
 
 
 const Container = styled.div`
@@ -208,6 +212,16 @@ const WebFlow = styled(Webflow)`
     margin: 0 10px;
 `
 
+const Nuxt = styled(Nuxtdotjs)`
+    color: #51e258;
+    margin: 0 10px;
+`
+
+const Vue = styled(Vuejs)`
+    color: #1bbd23;
+    margin: 0 10px;
+`
+
 const About = () => {
     
 
@@ -230,7 +244,9 @@ const About = () => {
             <Icons>
             <HtmlIcon /><CssIcon /><JavascriptIcon />
             <ReactIcon /><ReduxIcon /><StyledIcon />
+            <Vue /> <Nuxt />
             <SassIcon /> <WebFlow />
+            
             </Icons>
       
         {/* <Button href={pdf} target="blank" >Get My CV</Button> */}

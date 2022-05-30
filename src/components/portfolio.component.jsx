@@ -7,6 +7,7 @@ import webflow from "../assets/webflow.jpg";
 import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
 import Weather from "../assets/weather.jpg";
+import NuxtBlog from "../assets/cryptoblog.jpg";
 import sp from "../assets/sp.jpg";
 import styled from "styled-components";
 import ProjectCard from "./card.component";
@@ -24,6 +25,16 @@ export const DATA = [
         image: sp,
         website: "https://spotfinder-e8871.web.app/",
         github: "https://github.com/BarakOren/spot-finder" 
+    },
+    {
+        name: "Nuxt Crypto Blog",
+        info: "Crypto coins blog built with NUXT",
+        subInfo: [
+            "-Built with Nuxt and Firebase",
+        ],
+        image: NuxtBlog,
+        website: "https://barakoren.github.io/NuxtCryptoBlog/",
+        github: "https://github.com/BarakOren/NuxtCryptoBlog" 
     },
     {
         name: "Webflow Portfolio",
