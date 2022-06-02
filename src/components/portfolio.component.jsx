@@ -30,7 +30,7 @@ export const DATA = [
         name: "Nuxt Crypto Blog",
         info: "Crypto coins blog built with NUXT",
         subInfo: [
-            "-Built with Nuxt and Firebase",
+            "-Built with Nuxt, TailwindCSS, and Firebase",
         ],
         image: NuxtBlog,
         website: "https://barakoren.github.io/NuxtCryptoBlog/",
