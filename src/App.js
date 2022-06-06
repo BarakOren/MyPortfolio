@@ -10,6 +10,7 @@ import {createGlobalStyle} from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
+  min-height: 100vh;
   margin: 0 5%;
   background-color: #0f0e13;
   background-image: radial-gradient(at 0% 0%,hsla(253,16%,7%,1) 0,transparent 50%),radial-gradient(at 40% 0%,hsla(225,39%,30%,1) 0,transparent 50%),radial-gradient(at 100% 0%,hsla(339,49%,30%,0.7) 0,transparent 90%);
@@ -24,7 +25,9 @@ const GlobalStyle = createGlobalStyle`
    -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; 
-  
+    @media only screen and (max-width: 1100px){
+        min-height: 140vh;
+    }
 }
 
 p{
@@ -70,7 +73,7 @@ function App() {
           <Route exact component={Contact} path="/contact"/>
           <Route exact component={Portfolio} path="/projects"/>
         </Switch>
-        <Nav />
+        {/* <Nav /> */}
       </>
   );
 }

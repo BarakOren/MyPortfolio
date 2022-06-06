@@ -18,7 +18,7 @@ import {Github} from "@styled-icons/boxicons-logos/Github"
 
 const Container = styled.div`
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     margin: 0 0;
     display: flex;
     flex-direction: column;
@@ -89,30 +89,6 @@ const Description = styled.p`
     }
 `
 
-const Icons = styled.div`
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    background: rgba( 255, 255, 255, 0.08 );
-    box-shadow: 1px 1px 30px rgba( 255,255,255, 0.08 );
-    backdrop-filter: blur( 25px );
-    -webkit-backdrop-filter: blur( 25px );
-    border-radius: 30px;
-    padding: 1vw 3vw;
-    margin: 3vh 0;
-    @media only screen and (max-width: 1100px){
-    width:80%;
-    display: flex;
-    justify-content: space-evenly;
-    }
-    @media only screen and (max-width: 768px){
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-    }
-
-`
-
 // const Button = styled.a`
 //     text-decoration: none;
 //     padding: 0.5% 5%;
@@ -172,71 +148,169 @@ const Button = styled(Link)`
     }
 `
 
+
+
+const Icons = styled.div`
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba( 255, 255, 255, 0.08 );
+    box-shadow: 1px 1px 30px rgba( 255,255,255, 0.08 );
+    backdrop-filter: blur( 25px );
+    -webkit-backdrop-filter: blur( 25px );
+    border-radius: 30px;
+    padding: 1vw 3vw;
+    margin: 3vh 0;
+    @media only screen and (max-width: 1100px){
+    width:80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    @media only screen and (max-width: 768px){
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+`
+
+const w1 = '10vw'
+
 const HtmlIcon = styled(Html5)`
     color: #e44c24;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const CssIcon = styled(Css3)`
     color: #2babe4;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const ReactIcon = styled(ReactLogo)`
     color: #63dbfb;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const ReduxIcon = styled(Redux)`
     color: #764db8;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const JavascriptIcon = styled(Javascript)`
     color: #f4dc1c;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const StyledIcon = styled(Styledcomponents)`
     color: #e2a021;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const SassIcon = styled(Sass)`
     color: #cd6799;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const WebFlow = styled(Webflow)`
     color: #4353ff;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const Nuxt = styled(Nuxtdotjs)`
     color: #80eec1;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const Vue = styled(Vuejs)`
     color: #44b484;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const TailWind = styled(TailwindCss)`
     color: #26bcc8;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 const GitHubLogo = styled(Github)`
     color: white;
     margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
 `
 
 
 const About = () => {
     
-
-
     return(
     <Container>
         <TitleContainer>
