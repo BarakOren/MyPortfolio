@@ -14,6 +14,8 @@ import {Vuejs} from "@styled-icons/boxicons-logos/Vuejs"
 import {TailwindCss} from "@styled-icons/boxicons-logos/TailwindCss"
 import {Link} from "react-router-dom";
 import {Github} from "@styled-icons/boxicons-logos/Github"
+import {Nextdotjs} from "@styled-icons/simple-icons/Nextdotjs"
+import {Figma} from "@styled-icons/boxicons-logos/Figma"
 
 
 const Container = styled.div`
@@ -151,7 +153,7 @@ const Button = styled(Link)`
 
 
 const Icons = styled.div`
-    width: 80%;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     background: rgba( 255, 255, 255, 0.08 );
@@ -308,6 +310,27 @@ const GitHubLogo = styled(Github)`
     }
 `
 
+const Next = styled(Nextdotjs)`
+    color: black;
+    margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
+`
+
+const FigmaIcon = styled(Figma)`
+    color: #ffffff;
+    margin: 0 10px;
+    width: 6vw;
+    height: 6vw;
+    @media only screen and (max-width: 1100px){
+    width: 10vw;
+    height: 10vw;
+    }
+`
 
 const About = () => {
     
@@ -328,12 +351,12 @@ const About = () => {
             </div> */}
             <Icons>
             <HtmlIcon /><CssIcon /><JavascriptIcon />
-            <ReactIcon /><ReduxIcon /><StyledIcon />
+            <ReactIcon /><Next /><ReduxIcon /><StyledIcon />
             <SassIcon />
             <Vue /> <Nuxt /> <TailWind />
             <GitHubLogo />
             <WebFlow />
-            
+            <FigmaIcon />
             </Icons>
       
         {/* <Button href={pdf} target="blank" >Get My CV</Button> */}

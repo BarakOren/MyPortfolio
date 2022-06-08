@@ -22,7 +22,6 @@ const Card = styled.div`
     }
     &:hover .backgroundImage {
         filter: blur(1px) saturate(60%);
-
         transition: 200ms;    
         }
     &:hover .content {

@@ -11,7 +11,7 @@ import NuxtBlog from "../assets/cryptoblog.jpg";
 import sp from "../assets/sp.jpg";
 import styled from "styled-components";
 import ProjectCard from "./card.component";
-
+import coffee from "../assets/coffee.jpg"
 
 export const DATA = [
     {
@@ -35,6 +35,16 @@ export const DATA = [
         image: NuxtBlog,
         website: "https://barakoren.github.io/NuxtCryptoBlog/",
         github: "https://github.com/BarakOren/NuxtCryptoBlog" 
+    },
+    {
+        name: "COFFEE DISCOVERY",
+        info: "Discover the best and closest coffee shops with Next.js",
+        subInfo: [
+            "-Built with Next.js.",
+        ],
+        image: coffee,
+        website: "https://coffee-discovery-1hyq02ojf-defqon32.vercel.app/",
+        github: "https://github.com/BarakOren/coffee-discovery" 
     },
     {
         name: "Webflow Portfolio",
