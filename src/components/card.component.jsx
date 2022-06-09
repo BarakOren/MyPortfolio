@@ -84,7 +84,7 @@ const Card = styled.div`
         padding: 1vw 3vw;
         /* background-color: #3e3e3e; */
         font-size: 2.5vw;
-        background-color: #191c38dc;
+        background-color: #191c38ed;
         color: white;
         margin: 0;
         box-shadow: 3px 3px 10px #ffffff18;
@@ -95,7 +95,7 @@ const Card = styled.div`
         @media only screen and (max-width: 800px){
             font-size: 6vw;
             padding: 1.5vw 5vw;
-            background-color: #3e3e3ebc;
+            background-color: #191c38ed;
         }
         @media only screen and (max-width: 500px){
             font-size: 8vw;
@@ -108,9 +108,8 @@ const Card = styled.div`
         border-radius: 25px;
         width: 40vw;
         /* background-color: #3e3e3e; */
-        background-color: #191c38ca;
+        background-color: #191c38ed;
         color: #dadada;
-  
         font-size: 1.3vw;
         margin: 0;
         box-shadow: 3px 3px 10px #ffffff18;
@@ -121,7 +120,7 @@ const Card = styled.div`
             width: 60vw;
         }
         @media only screen and (max-width: 800px){
-            background-color: #3e3e3ebc;
+            background-color: #191c38ed;
             color: white;
             width: 70vw;
             padding: 2vw 4vw;
@@ -178,7 +177,7 @@ const A = styled.a`
     margin: 0;
     padding: 0.5vw 5vw;
     border-radius: 25px;
-    background-color: #191c38;
+    background-color: #191c38ed;
     font-size: 1.5vw;
     color: #b8b8b8;
     text-decoration: none;

@@ -56,18 +56,18 @@ export const DATA = [
         website: "https://barak-oren.webflow.io/",
         github: null 
     },
-    {
-        name: "Weather App",
-        info: "Weather Application.",
-        subInfo: [
-            "-Using Redux-Sagas to work with Api and get weather information.",
-            "-Users can add and remove locations to favorites. get weather by their location, or use search autocomplete to get the weather from any location.",
-            "-Built with React, Redux, Redux-Sagas and Styled-Components."
-        ],
-        image: Weather,
-        website: "https://barakoren.github.io/weather/",
-        github: "https://github.com/BarakOren/weather" 
-    },
+    // {
+    //     name: "Weather App",
+    //     info: "Weather Application.",
+    //     subInfo: [
+    //         "-Using Redux-Sagas to work with Api and get weather information.",
+    //         "-Users can add and remove locations to favorites. get weather by their location, or use search autocomplete to get the weather from any location.",
+    //         "-Built with React, Redux, Redux-Sagas and Styled-Components."
+    //     ],
+    //     image: Weather,
+    //     website: "https://barakoren.github.io/weather/",
+    //     github: "https://github.com/BarakOren/weather" 
+    // },
     {
         name: "Writer App",
         info: "A tool for graffiti artists that simulates combinations of specific color shades that art companeis produce.",
@@ -81,35 +81,35 @@ export const DATA = [
         website: "https://barakoren.github.io/WriterApp/",
         github: "https://github.com/BarakOren/WriterApp"
     },
-    {
-        name: "CRWN-CLOTHING",
-        info: "E-Commerce Clothing Store! ",
-        subInfo: [
-            "-Built as part of the course 'Complete React Developer in 2021'",
-            "-Built with React, Redux, Firebase, Redux-sagas and Sass"
-        ],
-        image: CRWN,
-        website: "https://barakoren.github.io/CRWN-CLOTHING",
-        github: "https://github.com/BarakOren/CRWN-CLOTHING" 
-    },
-    {
-        name: "Rotem Brum",
-        info: "Rotem Brum's Portfolio And Shop Project, ",
-        subInfo: [
-            "-Working with calligraphy artist/designer and use his work in the website.",
-            "-Built with React, Redux, Sass, React-CSSTransitions and Paypal API",
-        ],
-        image: Rotem2,
-        website: "https://barakoren.github.io/rotem-brum/",
-        github: "https://github.com/BarakOren/rotem-brum"
-    },
-    {
-        name: "Crooked Carousel",
-        info: "Crooked carousel created with react, users can put any sizes and use it in their own websites.",
-        image: Crooked,
-        website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
-        github: "https://github.com/BarakOren/Crooked-Carousel" 
-    },
+    // {
+    //     name: "CRWN-CLOTHING",
+    //     info: "E-Commerce Clothing Store! ",
+    //     subInfo: [
+    //         "-Built as part of the course 'Complete React Developer in 2021'",
+    //         "-Built with React, Redux, Firebase, Redux-sagas and Sass"
+    //     ],
+    //     image: CRWN,
+    //     website: "https://barakoren.github.io/CRWN-CLOTHING",
+    //     github: "https://github.com/BarakOren/CRWN-CLOTHING" 
+    // },
+    // {
+    //     name: "Rotem Brum",
+    //     info: "Rotem Brum's Portfolio And Shop Project, ",
+    //     subInfo: [
+    //         "-Working with calligraphy artist/designer and use his work in the website.",
+    //         "-Built with React, Redux, Sass, React-CSSTransitions and Paypal API",
+    //     ],
+    //     image: Rotem2,
+    //     website: "https://barakoren.github.io/rotem-brum/",
+    //     github: "https://github.com/BarakOren/rotem-brum"
+    // },
+    // {
+    //     name: "Crooked Carousel",
+    //     info: "Crooked carousel created with react, users can put any sizes and use it in their own websites.",
+    //     image: Crooked,
+    //     website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
+    //     github: "https://github.com/BarakOren/Crooked-Carousel" 
+    // },
     // {
     //     name: "To-Do App",
     //     info: "Todo List App with light/dark theme Toggler, Built with react Firebase and Styled-Components",
