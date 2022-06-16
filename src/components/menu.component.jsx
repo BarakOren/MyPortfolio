@@ -18,25 +18,28 @@ const Hamburger = styled(MenuIcon)`
         &:hover{
             cursor: pointer;
         }
+    }
 `
 
 const Container = styled.div`
     display:none !important;
     @media only screen and (max-width: 800px){
         display: initial !important;
+        background-color: #0f0e13;
+        /* background-image: radial-gradient(at 0% 0%,hsla(253,16%,7%,1) 0,transparent 50%),radial-gradient(at 40% 0%,hsla(225,39%,30%,1) 0,transparent 50%),radial-gradient(at 100% 0%,hsla(339,49%,30%,0.7) 0,transparent 90%); */
         z-index: 3;
         width: 100vw;
         height: 100vh;
         position: fixed;
         top: 0;
         transition: right 0.8s ease;
-        background-image: linear-gradient(to right, #252427, #202022, #1c1c1d, #181718, #131313);
+        /* background-image: linear-gradient(to right, #252427, #202022, #1c1c1d, #181718, #131313); */
         }
 `
 
 const LinksContainer = styled.div`
-    margin-top: 12vh;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +69,7 @@ const Menu = () => {
                 <LinksContainer>
                     <StyledLink style={{color: location === "/" ? "white" : "", borderColor: location === "/" ? "white" : ""}} to="/" onClick={() => setMenuToggle(false)} className="menuItem">About</StyledLink>
                     <StyledLink style={{color: location === "/projects" ? "white" : "", borderColor: location === "/projects" ? "white" : ""}} to="/projects" onClick={() => setMenuToggle(false)} className="menuItem">Projects</StyledLink>
+                    <StyledLink style={{color: location === "/designs" ? "white" : "", borderColor: location === "/designs" ? "white" : ""}} to="/designs" onClick={() => setMenuToggle(false)} className="menuItem">Designs</StyledLink>
                     <StyledLink style={{color: location === "/contact" ? "white" : "", borderColor: location === "/contact" ? "white" : ""}} to="/contact" onClick={() => setMenuToggle(false)} className="menuItem">Contact</StyledLink>
                 </LinksContainer>
             </Container>

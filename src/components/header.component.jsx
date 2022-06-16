@@ -54,6 +54,7 @@ const Header = () => {
                 <Links >
                     <StyledLink style={{color: location === "/" ? "white" : "", textShadow: location === "/" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/" >About</StyledLink>
                     <StyledLink style={{color: location === "/projects" ? "white" : "", textShadow: location === "/projects" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/projects" >Projects</StyledLink>
+                    <StyledLink style={{color: location === "/designs" ? "white" : "", textShadow: location === "/designs" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/designs" >Designs</StyledLink>
                     <StyledLink style={{color: location === "/contact" ? "white" : "", textShadow: location === "/contact" ? "2px 2px 10px rgb(255,255,255, 0.8)" : ""}} to="/contact" >Contact</StyledLink>  
                 </Links>
         </Container>

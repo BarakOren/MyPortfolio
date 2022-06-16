@@ -6,7 +6,9 @@ import Contact from "./components/contact.component";
 import Nav from "./components/nav.component";
 import Portfolio from "./components/portfolio.component";
 import Menu from './components/menu.component';
+import Designs from "./components/designs.component";
 import {createGlobalStyle} from "styled-components"
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -72,6 +74,7 @@ function App() {
           <Route exact component={About} path="/"/>
           <Route exact component={Contact} path="/contact"/>
           <Route exact component={Portfolio} path="/projects"/>
+          <Route exact component={Designs} path="/designs"/>
         </Switch>
         {/* <Nav /> */}
       </>

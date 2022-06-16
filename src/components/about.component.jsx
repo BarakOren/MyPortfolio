@@ -169,8 +169,9 @@ const Icons = styled.div`
     flex-wrap: wrap;
     }
     @media only screen and (max-width: 768px){
-    width:100%;
+    width:90%;
     display: flex;
+    padding: 10px;
     justify-content: space-evenly;
     }
 
@@ -359,7 +360,7 @@ const About = () => {
             <FigmaIcon />
             </Icons>
       
-        {/* <Button href={pdf} target="blank" >Get My CV</Button> */}
+      
             <Button onClick={() => window.scrollTo({ top: 0 })} to="/projects">Check Out My Work</Button>
     </Container>
     )
