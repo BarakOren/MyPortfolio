@@ -74,8 +74,7 @@ export const DATA = [
         subInfo: [
             "-Design and develop a solution for a real-life problem.",
             "-Programmed the website and app with react and redux.",
-            "-Designed the app and website with Adobe XD.",
-            "-Artwork created by me using Adobe Illustrator."
+            "-Designed the app and website with Figma.",
         ],
         image: Writer,
         website: "https://barakoren.github.io/WriterApp/",
