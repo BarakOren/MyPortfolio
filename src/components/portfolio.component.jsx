@@ -1,17 +1,17 @@
 import React from "react";
-import Rotem2 from "../assets/rotem2.jpg";
-import CRWN from "../assets/crwn-clothing.jpg";
+// import Rotem2 from "../assets/rotem2.jpg";
+// import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
-import Todo from "../assets/todo.jpg";
+// import Todo from "../assets/todo.jpg";
 import webflow from "../assets/webflow.jpg";
-import Crooked from "../assets/crookedcarousel.jpg";
+// import Crooked from "../assets/crookedcarousel.jpg";
 // import Trader from "../assets/Trader.jpg";
-import Weather from "../assets/weather.jpg";
+// import Weather from "../assets/weather.jpg";
 import NuxtBlog from "../assets/cryptoblog.jpg";
 import sp from "../assets/sp.jpg";
 import styled from "styled-components";
 import ProjectCard from "./card.component";
-import coffee from "../assets/coffee.jpg"
+import coffee from "../assets/coffee2.jpg"
 
 export const DATA = [
     {
