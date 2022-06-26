@@ -43,7 +43,7 @@ export const DATA = [
             "-Built with Next.js.",
         ],
         image: coffee,
-        website: "https://coffee-discovery-1hyq02ojf-defqon32.vercel.app/",
+        website: "https://coffee-discovery-e245nvyeo-defqon32.vercel.app/",
         github: "https://github.com/BarakOren/coffee-discovery" 
     },
     {
