@@ -22,11 +22,10 @@ const Hamburger = styled(MenuIcon)`
 `
 
 const Container = styled.div`
-    display:none !important;
+    display: none !important;
     @media only screen and (max-width: 800px){
         display: initial !important;
         background-color: #0f0e13;
-        /* background-image: radial-gradient(at 0% 0%,hsla(253,16%,7%,1) 0,transparent 50%),radial-gradient(at 40% 0%,hsla(225,39%,30%,1) 0,transparent 50%),radial-gradient(at 100% 0%,hsla(339,49%,30%,0.7) 0,transparent 90%); */
         z-index: 3;
         width: 100vw;
         height: 100vh;

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { useLocation } from "react-router";
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.header`
     z-index: 0;
     background-color: transparent;
     height: 4vw;

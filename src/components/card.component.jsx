@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const Card = styled.div`
     &.card{
     margin: 3vh 1vw;
@@ -16,10 +15,7 @@ const Card = styled.div`
     position: relative;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.575);
     transition: 300ms all;
-    &:hover {
-        /* background-color: #804f1016; */
-
-    }
+    
     &:hover .backgroundImage {
         filter: blur(1px) saturate(60%);
         transition: 200ms;    
@@ -82,7 +78,6 @@ const Card = styled.div`
     &.name{
         border-radius: 25px;
         padding: 1vw 3vw;
-        /* background-color: #3e3e3e; */
         font-size: 2.5vw;
         background-color: #191c38ed;
         color: white;
@@ -107,7 +102,6 @@ const Card = styled.div`
         padding: 1.5vw 2.5vw;
         border-radius: 25px;
         width: 40vw;
-        /* background-color: #3e3e3e; */
         background-color: #191c38ed;
         color: #dadada;
         font-size: 1.3vw;
@@ -220,12 +214,12 @@ const ProjectCard = (props) => {
         <Card className="card" >
             <Card className="backgroundImage" style={{backgroundImage: `url(${image})`}} />
             <Card className="content">
-            <Card className="name">{name}</Card>
-            <Card className="infoContainer">
-            <Card className="info">{info}</Card>
-            {subInfo && subInfo.map((sub, index) => {
-                return <Card key={index} className="subInfo">{sub}</Card>
-            })}
+                <Card className="name">{name}</Card>
+                <Card className="infoContainer">
+                <Card className="info">{info}</Card>
+                {subInfo && subInfo.map((sub, index) => {
+                    return <Card key={index} className="subInfo">{sub}</Card>
+                })}
             </Card>
             <Card className="ButtonsContainer">
                 <A className="link" href={website} target="_blank" rel="noopener noreferrer">Website</A>

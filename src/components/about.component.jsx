@@ -1,5 +1,4 @@
 import React from "react";
-// import pdf from "./Resume.pdf";
 import styled from "styled-components";
 import {Html5} from '@styled-icons/boxicons-logos/Html5';
 import {Css3} from '@styled-icons/boxicons-logos/Css3';
@@ -16,7 +15,6 @@ import {Link} from "react-router-dom";
 import {Github} from "@styled-icons/boxicons-logos/Github"
 import {Nextdotjs} from "@styled-icons/simple-icons/Nextdotjs"
 import {Figma} from "@styled-icons/boxicons-logos/Figma"
-
 
 const Container = styled.div`
     width: 100%;
@@ -91,35 +89,6 @@ const Description = styled.p`
     }
 `
 
-// const Button = styled.a`
-//     text-decoration: none;
-//     padding: 0.5% 5%;
-//     background-color: #423f47;
-//     color: white;
-//     text-align: center;
-//     border: 2px solid rgb(255, 136, 0);
-//     box-shadow: rgb(0 0 0 / 60%) 1px 3px 2px;
-//     border-radius: 50px;
-//     cursor: pointer;
-//     transition: all 0.5s ease 0s;
-//     font-size: 1.3vw;
-//     &:hover {
-//         box-shadow: rgba(255, 136, 0, 0.699) 0px 0px 20px;
-//     }
-//     @media only screen and (max-width: 1100px){
-//         font-size: 2vw; 
-//         padding: 1vw 4vw;
-//     }
-//     @media only screen and (max-width: 768px){
-//         font-size: 4vw;
-//         padding: 1vw 5vw;
-//     }
-//     @media only screen and (max-width: 500px){
-//         font-size: 5vw;
-//         padding: 2vw 7vw;
-//     }
-// `
-
 const Button = styled(Link)`
     text-decoration: none;
     padding: 0.5% 3%;
@@ -176,8 +145,6 @@ const Icons = styled.div`
     }
 
 `
-
-const w1 = '10vw'
 
 const HtmlIcon = styled(Html5)`
     color: #e44c24;
@@ -334,34 +301,20 @@ const FigmaIcon = styled(Figma)`
 `
 
 const About = () => {
-    
-    return(
+    return ( 
     <Container>
         <TitleContainer>
             <Name>Barak Oren</Name>
             <FrontEnd>Front-End Developer</FrontEnd>
             <Description>Adaptable Front-End Developer with 2 years of developing experience. Fast Learner who specializes in React, Redux and JavaScript. Writing high level of clean code and passion for user experience and clean UI designs.</Description>
         </TitleContainer>
-            {/* <div className="icons">
-            <i id="icon" className="devicon-html5-plain-wordmark colored"></i>
-            <i id="icon" className="devicon-css3-plain-wordmark colored"></i>
-            <i id="icon" className="devicon-javascript-plain colored"></i>
-            <i id="icon" className="devicon-react-original-wordmark colored"></i>
-            <i id="icon" className="devicon-redux-original"></i>
-            <i id="icon" className="devicon-sass-original colored"></i>
-            </div> */}
-            <Icons>
+        <Icons>
             <HtmlIcon /><CssIcon /><JavascriptIcon />
             <ReactIcon /><Next /><ReduxIcon /><StyledIcon />
-            <SassIcon />
-            <Vue /> <Nuxt /> <TailWind />
-            <GitHubLogo />
-            <WebFlow />
-            <FigmaIcon />
-            </Icons>
-      
-      
-            <Button onClick={() => window.scrollTo({ top: 0 })} to="/projects">Check Out My Work</Button>
+            <SassIcon /><Vue /> <Nuxt /> <TailWind />
+            <GitHubLogo /><WebFlow /><FigmaIcon />
+        </Icons>
+        <Button onClick={() => window.scrollTo({ top: 0 })} to="/projects">Check Out My Work</Button>
     </Container>
     )
 }

@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import grey from '@material-ui/core/colors/grey';
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.nav`
 width: 90vw;
 height: 10vh;
 margin-top: 15px;
@@ -12,7 +12,6 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-// background-color: #252427;
 background-color: transparent;
 `
 
@@ -38,12 +37,10 @@ const Nav = () => {
     return(
         <Container>
             <A href="http://www.linkedin.com/in/barak-oren" target="_blank" rel="noopener noreferrer">
-
-            <StyledLinkedin style={{fontSize: window.innerWidth > 800 ? 35 : 30, color: grey[300]}} />
+                <StyledLinkedin style={{fontSize: window.innerWidth > 800 ? 35 : 30, color: grey[300]}} />
             </A>
             <A href="https://github.com/BarakOren" target="_blank" rel="noopener noreferrer">
-   
-            <StyledGithub  style={{fontSize: 30, color: grey[300]}} />
+                <StyledGithub  style={{fontSize: 30, color: grey[300]}} />
             </A>
         </Container>
     )

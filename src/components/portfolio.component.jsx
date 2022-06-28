@@ -1,12 +1,6 @@
 import React from "react";
-// import Rotem2 from "../assets/rotem2.jpg";
-// import CRWN from "../assets/crwn-clothing.jpg";
 import Writer from "../assets/writer.jpg";
-// import Todo from "../assets/todo.jpg";
 import webflow from "../assets/webflow.jpg";
-// import Crooked from "../assets/crookedcarousel.jpg";
-// import Trader from "../assets/Trader.jpg";
-// import Weather from "../assets/weather.jpg";
 import NuxtBlog from "../assets/cryptoblog.jpg";
 import sp from "../assets/sp.jpg";
 import styled from "styled-components";
@@ -56,18 +50,6 @@ export const DATA = [
         website: "https://barak-oren.webflow.io/",
         github: null 
     },
-    // {
-    //     name: "Weather App",
-    //     info: "Weather Application.",
-    //     subInfo: [
-    //         "-Using Redux-Sagas to work with Api and get weather information.",
-    //         "-Users can add and remove locations to favorites. get weather by their location, or use search autocomplete to get the weather from any location.",
-    //         "-Built with React, Redux, Redux-Sagas and Styled-Components."
-    //     ],
-    //     image: Weather,
-    //     website: "https://barakoren.github.io/weather/",
-    //     github: "https://github.com/BarakOren/weather" 
-    // },
     {
         name: "Writer App",
         info: "A tool for graffiti artists that simulates combinations of specific color shades that art companeis produce.",
@@ -80,50 +62,6 @@ export const DATA = [
         website: "https://barakoren.github.io/WriterApp/",
         github: "https://github.com/BarakOren/WriterApp"
     },
-    // {
-    //     name: "CRWN-CLOTHING",
-    //     info: "E-Commerce Clothing Store! ",
-    //     subInfo: [
-    //         "-Built as part of the course 'Complete React Developer in 2021'",
-    //         "-Built with React, Redux, Firebase, Redux-sagas and Sass"
-    //     ],
-    //     image: CRWN,
-    //     website: "https://barakoren.github.io/CRWN-CLOTHING",
-    //     github: "https://github.com/BarakOren/CRWN-CLOTHING" 
-    // },
-    // {
-    //     name: "Rotem Brum",
-    //     info: "Rotem Brum's Portfolio And Shop Project, ",
-    //     subInfo: [
-    //         "-Working with calligraphy artist/designer and use his work in the website.",
-    //         "-Built with React, Redux, Sass, React-CSSTransitions and Paypal API",
-    //     ],
-    //     image: Rotem2,
-    //     website: "https://barakoren.github.io/rotem-brum/",
-    //     github: "https://github.com/BarakOren/rotem-brum"
-    // },
-    // {
-    //     name: "Crooked Carousel",
-    //     info: "Crooked carousel created with react, users can put any sizes and use it in their own websites.",
-    //     image: Crooked,
-    //     website: "https://codesandbox.io/s/caro-31fos?file=/src/carousel.js",
-    //     github: "https://github.com/BarakOren/Crooked-Carousel" 
-    // },
-    // {
-    //     name: "To-Do App",
-    //     info: "Todo List App with light/dark theme Toggler, Built with react Firebase and Styled-Components",
-    //     image: Todo,
-    //     website: "https://to-do-857ef.web.app/",
-    //     github: "https://github.com/BarakOren/Todo" 
-    // }
-    // {
-    //     id: 4,
-    //     name: "Trading site",
-    //     info: "Trading stocks website, the user can buy stocks and watch the profit/loss in real time. built with React, Styled-components and Firebase",
-    //     image: Trader,
-    //     website: "https://barakoren.github.io/Trader/",
-    //     github: "https://github.com/BarakOren/Trader" 
-    // },
 ]
 
 const Container = styled.div`
@@ -159,11 +97,17 @@ const Portfolio = () => {
             <CardsContainer>
                 {DATA.map((project) => {
                     const {index, name, info, subInfo, image, website, github} = project;
-                    return(
-                        <ProjectCard key={index} name={name} info={info} subInfo={subInfo} image={image} website={website} github={github} />
-                    )
-            })
-            }
+                        return <ProjectCard 
+                        key={index} 
+                        name={name} 
+                        info={info} 
+                        subInfo={subInfo} 
+                        image={image} 
+                        website={website} 
+                        github={github} 
+                        />
+                    })
+                }
             </CardsContainer>
         </Container>
     )

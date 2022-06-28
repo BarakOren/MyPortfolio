@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
   margin: 0 5%;
   background-color: #0f0e13;
   background-image: radial-gradient(at 0% 0%,hsla(253,16%,7%,1) 0,transparent 50%),radial-gradient(at 40% 0%,hsla(225,39%,30%,1) 0,transparent 50%),radial-gradient(at 100% 0%,hsla(339,49%,30%,0.7) 0,transparent 90%);
-  /* background-image: linear-gradient(to right, #252427, #202022, #1c1c1d, #181718, #131313); */
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,7 +75,6 @@ function App() {
           <Route exact component={Portfolio} path="/projects"/>
           <Route exact component={Designs} path="/designs"/>
         </Switch>
-        {/* <Nav /> */}
       </>
   );
 }
