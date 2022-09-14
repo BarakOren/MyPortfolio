@@ -125,8 +125,8 @@ const Icons = styled.div`
     width: 95%;
     display: flex;
     justify-content: space-evenly;
-    background: rgba( 255, 255, 255, 0.08 );
-    box-shadow: 1px 1px 30px rgba( 255,255,255, 0.08 );
+    background: rgba( 255, 255, 255, 0.03 );
+    box-shadow: 1px 1px 30px rgba( 255,255,255, 0.03 );
     backdrop-filter: blur( 25px );
     -webkit-backdrop-filter: blur( 25px );
     border-radius: 30px;
