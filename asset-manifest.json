@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.02794834.chunk.js",
-    "main.js.map": "/static/js/main.02794834.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6a5b29cc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6a5b29cc.js.map",
-    "static/js/2.bb5b152f.chunk.js": "/static/js/2.bb5b152f.chunk.js",
-    "static/js/2.bb5b152f.chunk.js.map": "/static/js/2.bb5b152f.chunk.js.map",
-    "static/js/3.91262a9b.chunk.js": "/static/js/3.91262a9b.chunk.js",
-    "static/js/3.91262a9b.chunk.js.map": "/static/js/3.91262a9b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.bb5b152f.chunk.js.LICENSE.txt": "/static/js/2.bb5b152f.chunk.js.LICENSE.txt",
-    "static/media/coffee2.d6e52c9a.jpg": "/static/media/coffee2.d6e52c9a.jpg",
-    "static/media/cryptoblog.9663a88f.jpg": "/static/media/cryptoblog.9663a88f.jpg",
-    "static/media/sp.6a32cd5d.jpg": "/static/media/sp.6a32cd5d.jpg",
-    "static/media/webflow.19515d0f.jpg": "/static/media/webflow.19515d0f.jpg",
-    "static/media/writer-1.b7b10715.png": "/static/media/writer-1.b7b10715.png",
-    "static/media/writer-2.a5471f21.png": "/static/media/writer-2.a5471f21.png",
-    "static/media/writer.4ff328d1.jpg": "/static/media/writer.4ff328d1.jpg"
+    "main.js": "/MyPortfolio/static/js/main.bbfc0d20.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.bbfc0d20.chunk.js.map",
+    "runtime-main.js": "/MyPortfolio/static/js/runtime-main.dfcc70e3.js",
+    "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.dfcc70e3.js.map",
+    "static/js/2.e4e80011.chunk.js": "/MyPortfolio/static/js/2.e4e80011.chunk.js",
+    "static/js/2.e4e80011.chunk.js.map": "/MyPortfolio/static/js/2.e4e80011.chunk.js.map",
+    "static/js/3.91262a9b.chunk.js": "/MyPortfolio/static/js/3.91262a9b.chunk.js",
+    "static/js/3.91262a9b.chunk.js.map": "/MyPortfolio/static/js/3.91262a9b.chunk.js.map",
+    "index.html": "/MyPortfolio/index.html",
+    "static/js/2.e4e80011.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.e4e80011.chunk.js.LICENSE.txt",
+    "static/media/coffee2.d6e52c9a.jpg": "/MyPortfolio/static/media/coffee2.d6e52c9a.jpg",
+    "static/media/cryptoblog.9663a88f.jpg": "/MyPortfolio/static/media/cryptoblog.9663a88f.jpg",
+    "static/media/sp.6a32cd5d.jpg": "/MyPortfolio/static/media/sp.6a32cd5d.jpg",
+    "static/media/webflow.19515d0f.jpg": "/MyPortfolio/static/media/webflow.19515d0f.jpg",
+    "static/media/writer-1.b7b10715.png": "/MyPortfolio/static/media/writer-1.b7b10715.png",
+    "static/media/writer-2.a5471f21.png": "/MyPortfolio/static/media/writer-2.a5471f21.png",
+    "static/media/writer.4ff328d1.jpg": "/MyPortfolio/static/media/writer.4ff328d1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a5b29cc.js",
-    "static/js/2.bb5b152f.chunk.js",
-    "static/js/main.02794834.chunk.js"
+    "static/js/runtime-main.dfcc70e3.js",
+    "static/js/2.e4e80011.chunk.js",
+    "static/js/main.bbfc0d20.chunk.js"
   ]
 }
